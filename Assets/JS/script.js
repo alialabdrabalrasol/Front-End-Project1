@@ -12,7 +12,7 @@ function search() {
 
 const loadData = async function (city) {
   let geodata = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
   )
     .then((response) => response.json())
     .then((data) => data)
@@ -22,7 +22,7 @@ const loadData = async function (city) {
   let lon = geodata[0].lon;
 
   let weatherdata = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
   )
     .then((response) => response.json())
     .then((data) => displayData(data))
