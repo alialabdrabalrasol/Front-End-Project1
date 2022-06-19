@@ -1,10 +1,4 @@
 //import fetch from "node-fetch";
-/* get the city get the weather type and store them inside of variables to user them in :
-user weather api to get the coordinates of a place using its name
-use the weather api to fetch weather data 
-use the imsea data to get an image of the place you have searched 
-imsea url : https://imsea.herokuapp.com/api/1/?q={querydata}
-*/
 
 const API_KEY = "e5f24e2ac1b06379097526f4c971a8ce";
 
